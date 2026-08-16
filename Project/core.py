@@ -7,7 +7,10 @@ from langchain_mistralai import ChatMistralAI
 model = ChatMistralAI(
     model="mistral-small-2603"
 )
-
-result = model.invoke("Hello, how are you?")
-
-print(result.content)
+while True:
+    user_input = input("You: ")
+    if user_input.lower() in ["exit", "quit"]:
+        print("Exiting the chat. Goodbye!")
+        break
+    result = model.invoke(user_input)
+    print(f"Assistant: {result.content}")
