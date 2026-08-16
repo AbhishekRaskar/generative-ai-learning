@@ -1,0 +1,11 @@
+google-generativeai
+groq
+python-dotenv
+langchain
+langchain-google-genai
+langchain-groq
+langgraph
+streamlit
+langchain-mistralai
+
+langchain_huggingface 
