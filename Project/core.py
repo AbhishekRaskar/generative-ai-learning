@@ -4,9 +4,7 @@ load_dotenv()
 from langchain_mistralai import ChatMistralAI
 
 
-model = ChatMistralAI(
-    model="mistral-small-2603"
-)
+model = ChatMistralAI(model="mistral-small-2603")
 while True:
     user_input = input("You: ")
     if user_input.lower() in ["exit", "quit"]:
